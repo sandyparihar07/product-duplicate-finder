@@ -1,0 +1,386 @@
+/* === Layout === */
+.skusn-wrap {
+	max-width: 1200px;
+}
+
+/* === Dashboard Stats Grid === */
+.skusn-dashboard-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 16px;
+	margin: 20px 0;
+}
+
+.skusn-stat-card {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	padding: 24px 20px;
+	text-align: center;
+	transition: box-shadow 0.15s;
+}
+
+.skusn-stat-card:hover {
+	box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+.skusn-stat-number {
+	font-size: 36px;
+	font-weight: 700;
+	color: #1d2327;
+	line-height: 1.1;
+}
+
+.skusn-stat-label {
+	font-size: 13px;
+	color: #646970;
+	margin-top: 6px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+/* === Cards === */
+.skusn-card {
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+	padding: 24px;
+	margin: 20px 0;
+}
+
+.skusn-card h2 {
+	margin: 0 0 16px;
+	padding: 0 0 12px;
+	border-bottom: 1px solid #e0e0e0;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.skusn-card-desc {
+	color: #646970;
+	margin: 0 0 16px;
+	font-size: 13px;
+}
+
+.skusn-card-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	flex-wrap: wrap;
+	margin-bottom: 12px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.skusn-card-header h2 {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.skusn-card-actions {
+	display: flex;
+	gap: 6px;
+	align-items: center;
+}
+
+.skusn-card-empty {
+	text-align: center;
+	padding: 60px 24px;
+}
+
+.skusn-card-empty h2 {
+	justify-content: center;
+	border: none;
+}
+
+.skusn-empty-icon {
+	font-size: 48px;
+	color: #00a32a;
+	margin-bottom: 12px;
+}
+
+/* === Summary Grid === */
+.skusn-summary-grid {
+	display: flex;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+
+.skusn-summary-item {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.skusn-summary-label {
+	font-size: 12px;
+	color: #646970;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.skusn-summary-item strong {
+	font-size: 18px;
+}
+
+/* === Status Badges === */
+.skusn-status {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	line-height: 1.4;
+}
+
+.skusn-status-completed {
+	background: #d4edda;
+	color: #155724;
+}
+
+.skusn-status-in_progress,
+.skusn-status-pending {
+	background: #fff3cd;
+	color: #856404;
+}
+
+.skusn-status-cancelled {
+	background: #f8d7da;
+	color: #721c24;
+}
+
+.skusn-status-open {
+	background: #cce5ff;
+	color: #004085;
+}
+
+.skusn-status-resolved {
+	background: #d4edda;
+	color: #155724;
+}
+
+.skusn-status-reviewed {
+	background: #e2e3e5;
+	color: #383d41;
+}
+
+/* === Type Tags === */
+.skusn-tag {
+	display: inline-block;
+	padding: 3px 8px;
+	border-radius: 3px;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	vertical-align: middle;
+	margin-right: 6px;
+}
+
+.skusn-tag-sku {
+	background: #2271b1;
+	color: #fff;
+}
+
+.skusn-tag-name {
+	background: #996800;
+	color: #fff;
+}
+
+/* === Duplicate Groups === */
+.skusn-group {
+	border: 1px solid #e0e0e0;
+	margin: 16px 0;
+	padding: 0;
+	background: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.skusn-group-header {
+	padding: 14px 16px;
+	background: #f9f9f9;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.skusn-group-header h3 {
+	margin: 0;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	flex-wrap: wrap;
+	font-size: 14px;
+}
+
+.skusn-group-header h3 strong {
+	font-size: 15px;
+}
+
+.skusn-group-count {
+	font-size: 12px;
+	color: #646970;
+	font-weight: 400;
+	margin-left: 4px;
+}
+
+/* === Tables === */
+.skusn-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.skusn-table th {
+	text-align: left;
+	padding: 10px 12px;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+	color: #646970;
+	background: #f9f9f9;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.skusn-table td {
+	padding: 10px 12px;
+	border-bottom: 1px solid #f0f0f0;
+	vertical-align: middle;
+}
+
+.skusn-table tbody tr:hover {
+	background: #f0f6fc;
+}
+
+.skusn-table .check-column {
+	width: 30px;
+	padding: 10px 6px 10px 12px;
+}
+
+.skusn-table .col-id {
+	width: 60px;
+}
+
+.skusn-table .col-actions {
+	width: 100px;
+	white-space: nowrap;
+}
+
+.skusn-code {
+	font-size: 12px;
+	background: #f0f0f0;
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+
+.skusn-product-name {
+	display: block;
+	font-size: 12px;
+	color: #646970;
+	margin-top: 2px;
+}
+
+.skusn-empty {
+	color: #ccc;
+}
+
+.skusn-row-trashed {
+	opacity: 0.35;
+	text-decoration: line-through;
+}
+
+.skusn-row-trashed td {
+	background: #fff5f5;
+}
+
+/* === Action Buttons === */
+.skusn-btn-trash {
+	background: #b32d2e !important;
+	border-color: #b32d2e !important;
+	color: #fff !important;
+	font-weight: 600;
+	padding: 8px 20px !important;
+	font-size: 14px !important;
+	line-height: 1.4 !important;
+}
+
+.skusn-btn-trash:hover {
+	background: #a02829 !important;
+	border-color: #a02829 !important;
+	color: #fff !important;
+}
+
+.skusn-btn-export {
+	background: #2271b1 !important;
+	border-color: #2271b1 !important;
+	color: #fff !important;
+	font-weight: 600;
+	padding: 8px 20px !important;
+	font-size: 14px !important;
+	line-height: 1.4 !important;
+	text-decoration: none !important;
+}
+
+.skusn-btn-export:hover {
+	background: #135e96 !important;
+	border-color: #135e96 !important;
+	color: #fff !important;
+}
+
+/* === Scan Form === */
+#skusn-scan-form .form-table th {
+	width: 160px;
+}
+
+/* === Loading Spinner === */
+.skusn-loading {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #ccc;
+	border-top-color: #2271b1;
+	border-radius: 50%;
+	animation: skusn-spin 0.6s linear infinite;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+@keyframes skusn-spin {
+	to { transform: rotate(360deg); }
+}
+
+.skusn-check {
+	color: #00a32a;
+	font-weight: 700;
+}
+
+.skusn-cross {
+	color: #d63638;
+	font-weight: 700;
+}
+
+/* === Notices === */
+.notice.skusn-success {
+	border-left-color: #00a32a;
+}
+
+.notice.skusn-error {
+	border-left-color: #d63638;
+}
+
+/* === Settings === */
+#skusn-settings-form .form-table th {
+	width: 220px;
+	padding-top: 20px;
+}
+
+#skusn-settings-form h2 {
+	margin-top: 30px;
+}
